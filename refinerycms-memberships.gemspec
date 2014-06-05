@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.files             = Dir['lib/**/*', 'config/**/*', 'app/**/*']
 
   s.add_dependency    'refinerycms-core',     '>= 3.0.0.dev'
-  s.add_dependency    'refinerycms-settings', '>= 2.0.0'
+  s.add_dependency    'refinerycms-settings', '>= 3.0.0.dev'
 
   s.add_dependency    'nokogiri', '~> 1.5'
   s.add_dependency    'webrat', '~> 0.7.3'
