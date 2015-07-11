@@ -44,6 +44,9 @@ Finally seed your database and you're done.
 
 ## Versions
 
+### 3.0.0
+* Minimum changes for 3.0.0
+
 ### 2.0.1
 * numerous bugfixes
 

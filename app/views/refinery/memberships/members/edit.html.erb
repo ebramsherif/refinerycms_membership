@@ -1,4 +1,4 @@
-<% content_for :body_content_left do %>
+<% content_for :body do %>
   <%=raw @page.content_for(:body_above) if @page %>
   <div id="edit-member-form">
     <%= render :partial => 'form',
@@ -9,4 +9,3 @@
 <% end %>
 
 <%= render :partial => "/refinery/content_page", :locals => {:hide_sections => [:bodybelow, :bodyabove]} %>
-

@@ -7,10 +7,6 @@ module Refinery
 
       validates :first_name, :last_name, :presence => true
 
-      attr_accessible :membership_level, :first_name, :last_name, :title, :organization,
-                      :street_address, :city, :province, :postal_code, :phone, :fax, :website,
-                      :enabled, :add_to_member_until, :role_ids
-
       self.inheritance_column = :membership_level
 
       after_create :set_default_enabled

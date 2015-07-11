@@ -4,10 +4,8 @@ module Refinery
       translates :subject, :body
 
       class Translation
-        attr_accessible :locale
       end
 
-      attr_accessible :title, :subject, :body
 
       validates_uniqueness_of :title
 
