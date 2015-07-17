@@ -53,7 +53,7 @@ module Refinery
         street_address city province postal_code phone fax website)
         d = attributes.to_hash
         d.reject!{|k,v| !allowed_attributes.include?(k.to_s)}
-        d[:activation_url] = Rails.application.routes.url_helpers.activate_members_url(:confirmation_token => self.confirmation_token) if Refinery::Setting::find_or_set('memberships_confirmation', 'admin') == 'email'
+        d[:activation_url] = Refinery::Core::Engine.routes.url_helpers.activate_members_url(:confirmation_token => self.confirmation_token) if Refinery::Setting::find_or_set('memberships_confirmation', 'admin') == 'email'
         d[:member_until] = ::I18n.localize(member_until.to_date, :format => :long) if member_until && Refinery::Setting::find_or_set('memberships_timed_accounts', true)
         d
       end
