@@ -8,7 +8,7 @@ module Refinery
 
       class << self
         def [](title)
-          r = find(:first, :conditions => {:title => title})
+          r = where(title: title).first
           raise ActiveRecord::RecordNotFound.new(":title = #{title}") unless r
           r
         end
