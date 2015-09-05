@@ -61,8 +61,8 @@ module Refinery
 
         def load_settings
 
-          @membership_emails = MembershipEmail::find(:all)
-          @roles = Refinery::Role::find(:all, :conditions => ['title NOT IN (?)',['Superuser','Refinery','Member']])
+          @membership_emails = MembershipEmail::all
+          @roles = Refinery::Role::where(['title NOT IN (?)',['Superuser','Refinery','Member']]).all
 
           @notification_setting = Refinery::Setting.find_by_name('memberships_deliver_notification_to_users')
           @notification_setting ||= Refinery::Setting.new({:name => 'memberships_deliver_notification_to_users'})
