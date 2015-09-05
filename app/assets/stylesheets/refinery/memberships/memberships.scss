@@ -1,20 +1,25 @@
 .new_members_icon {
-  background-image: image-url("refinery/icons/new_account.png");
-  background-repeat: none;
+  background:image-url("refinery/icons/new_account.png") center left no-repeat;
+  padding:0 0 0 16px;
+  white-space:nowrap;
 }
 .members_icon {
-  background-image: image-url("refinery/icons/user.png");
-  background-repeat: none;
+  background:image-url("refinery/icons/user.png") center left no-repeat;
+  padding:0 0 0 16px;
+  white-space:nowrap;
 }
 .email_icon {
-  background-image: image-url("refinery/icons/email.png");
-  background-repeat: none;
+  background:image-url("refinery/icons/email.png") center left no-repeat;
+  padding:0 0 0 16px;
+  white-space:nowrap;
 }
 .roles_icon {
-  background-image: image-url("refinery/icons/group.png");
-  background-repeat: none;
+  background:image-url("refinery/icons/group.png") center left no-repeat;
+  padding:0 0 0 16px;
+  white-space:nowrap;
 }
 .options_icon {
-  background-image: image-url("refinery/icons/cog_edit.png");
-  background-repeat: none;
+  background:image-url("refinery/icons/cog_edit.png") center left no-repeat;
+  padding:0 0 0 16px;
+  white-space:nowrap;
 }
