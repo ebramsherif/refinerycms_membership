@@ -1,5 +1,4 @@
 $(function(){
-  $('#page_roles').corner('tr 5px').corner('bottom 5px');
   function setup(){
     $('#role_allow_members_of input[type!="radio"]').attr('disabled', !$('#page_roles #allow_members_of').is(':checked'));
     $('#role_allow_members_of .role label').css('color', !$('#page_roles #allow_members_of').is(':checked') ? '#999' : '');
