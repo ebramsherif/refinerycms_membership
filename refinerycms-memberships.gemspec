@@ -12,6 +12,6 @@ Gem::Specification.new do |s|
   s.add_dependency    'refinerycms-core',     '>= 3.0.0.dev'
   s.add_dependency    'refinerycms-settings', '>= 3.0.0.dev'
 
-  s.add_dependency    'nokogiri', '~> 1.5'
-  s.add_dependency    'webrat', '~> 0.7.3'
+  s.add_dependency    'nokogiri', '>= 1.5'
+  s.add_dependency    'webrat', '>= 0.7.3'
 end
